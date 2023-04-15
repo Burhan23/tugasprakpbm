@@ -1,0 +1,9 @@
+Jika terdapat warn error biasanya ada d throw new GradleExecption di folder android>app>build.gradle
+
+line 11 bisa diganti dengan:
+
+	throw new FileNotFoundException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+
+Bisa coba ganti SDK dari targetSdkVersion flutter.targetSdkVersion pada line 52 menjadi :
+
+	targetSdkVersion 29
